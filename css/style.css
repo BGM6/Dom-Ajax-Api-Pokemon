@@ -135,6 +135,9 @@ html {
 
 /* My CSS */
 
+body {
+	background: rgb(36, 33, 33);
+}
 #navbar {
 	background: rgb(35, 35, 126);
 	padding: 2rem;
