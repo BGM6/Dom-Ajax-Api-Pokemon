@@ -19,10 +19,15 @@ $btn.addEventListener('click', function (e) {
     url: baseUrl,
     method: 'GET',
   }).then(function (response) {
-    const image = response.sprites.front_default;
+    // console.log(response);
+    // const image = response.sprites.front_default;
+
+   
+    const sprites = response.sprites.other.dream_world.front_default;
+
     const name = response.name;
     $h1.innerText = name.toUpperCase();
-    $img.src = image;
+    $img.src = sprites;
 
     $container.append($h1);
     $container.append($img);

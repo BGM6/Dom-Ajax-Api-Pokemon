@@ -15,16 +15,17 @@ body {
 	
 }
 
-#btn,
-#inputSearch {
+#btn, #inputSearch {
 	border-radius: 0.5rem;
 	font-size: 1.6rem;
 	padding: 1rem;
 }
 
 img {
+	margin-left: 15rem;
 	height: 60rem;
 	width: auto;
+	
 }
 
 h1 {
