@@ -1,5 +1,8 @@
 const $btn = document.querySelector("#btn");
 const $inputSearch = document.querySelector("#inputSearch");
+const $container = document.querySelector("#container");
+const $h1 = document.createElement("h1");
+const $img = document.createElement("img");
 
 
 $btn.addEventListener('click', function (e) {
@@ -18,8 +21,11 @@ $btn.addEventListener('click', function (e) {
   }).then(function (response) {
     const image = response.sprites.front_default;
     const name = response.name;
-    console.log(image);
-    console.log(name);
+    $h1.innerText = name.toUpperCase();
+    $img.src = image;
+
+    $container.append($h1);
+    $container.append($img);
 
   }).then(function (error) {
     if (error) {
@@ -29,6 +35,7 @@ $btn.addEventListener('click', function (e) {
   });
 
 })
+
 
 
 
